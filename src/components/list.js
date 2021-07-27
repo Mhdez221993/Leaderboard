@@ -3,10 +3,9 @@ class List {
     this.scores = scores;
   }
 
-  createMarkup() {
-    return `<ul>
-        ${this.scores.map((score) => `<li>${score.name}: ${score.score}</li>`).join('\n')}
-        </ul>`;
+  createMarkup(scores) {
+    this.scores = scores;
+    return `<ul> ${this.scores.map((score) => `<li>${score.name}: ${score.score}</li>`).join('\n')} </ul>`;
   }
 
   sortScore() {
@@ -14,4 +13,4 @@ class List {
   }
 }
 
-export default List;
+module.exports = List;

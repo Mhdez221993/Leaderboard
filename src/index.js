@@ -6,4 +6,4 @@ const scoreList = new List(scores);
 const sortedScore = scoreList.sortScore();
 
 
-document.getElementById('user-table').innerHTML = scoreList.createMarkup();
+document.getElementById('user-table').innerHTML = scoreList.createMarkup(sortedScore);
