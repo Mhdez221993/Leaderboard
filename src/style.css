@@ -4,38 +4,38 @@ i,
 input,
 ul,
 h2 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    width: 700px;
-    margin: auto;
-   display: flex;
-   justify-content: space-between;
+  width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-score {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .refresh {
-    margin: 0 0 0 20px;
-    width: 100px;
-    height: 30px;
+  margin: 0 0 0 20px;
+  width: 100px;
+  height: 30px;
 }
 
 li:nth-child(odd) {
-    background: rgb(184, 182, 182);
-  }
+  background: rgb(184, 182, 182);
+}
 
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form > input {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
