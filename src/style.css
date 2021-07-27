@@ -1,14 +1,37 @@
 li,
 p,
 i,
-input {
+input,
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .wrapper {
-    width: 800px;
+    width: 700px;
     margin: auto;
-    border: 1px solid red;
+   display: flex;
+   justify-content: space-between;
+}
+
+.header-score {
+    display: flex;
+}
+
+i {
+    margin: 15px 0 0 20px;
+}
+
+li:nth-child(odd) {
+    background: rgb(184, 182, 182);
+  }
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > input {
+    margin-bottom: 20px;
 }
