@@ -2,7 +2,8 @@ li,
 p,
 i,
 input,
-ul {
+ul,
+h2 {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -17,10 +18,13 @@ ul {
 
 .header-score {
     display: flex;
+    align-items: center;
 }
 
-i {
-    margin: 15px 0 0 20px;
+.refresh {
+    margin: 0 0 0 20px;
+    width: 100px;
+    height: 30px;
 }
 
 li:nth-child(odd) {
