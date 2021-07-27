@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "jest": "jest --watchAll * .js",
     "build": "webpack",
     "start": "webpack serve --open",
     "watch": "webpack --watch"
@@ -20,9 +21,11 @@
   },
   "homepage": "https://github.com/Mhdez221993/Leaderboard#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.14.5",
     "css-loader": "^6.2.0",
     "express": "^4.17.1",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
     "style-loader": "^3.2.1",
     "webpack": "^5.46.0",
     "webpack-cli": "^4.7.2",
