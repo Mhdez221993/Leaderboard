@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <h1>Project Setup</h1>
+    <h1 class="text-center">Leaderboard</h1>
+    <div class="wrapper d-flex">
+        <section class="show-score">
+            <div>
+                <h2>Recent score</h2>
+                <i class="fas fa-sync-alt"></i>
+            </div>
+            <ul>
+                <li>Name: 20</li>
+                <li>Name: 10</li>
+                <li>Name: 4</li>
+                <li>Name: 2</li>
+                <li>Name: 1</li>
+            </ul>
+        </section>
+        <section class="add-score">
+            <h2>Add your score</h2>
+            <form>
+                <input type="text" placeholder="Your name">
+                <input type="text" placeholder="Your score">
+            </form>
+        </section>
+    </div>
 
     <script src="./src/index.js"></script>
 </body>
