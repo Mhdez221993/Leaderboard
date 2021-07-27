@@ -1,14 +1,17 @@
 class List {
+  constructor(scores) {
+    this.scores = scores;
+  }
 
-    createMarkup(scores){
-        return `<ul>
-        ${scores.map(score => `<li>${score.name}: ${score.score}</li>`).join("\n")}
-        </ul>`
-    }
+  createMarkup() {
+    return `<ul>
+        ${this.scores.map((score) => `<li>${score.name}: ${score.score}</li>`).join('\n')}
+        </ul>`;
+  }
 
-    sortScore(scores){
-       return scores.sort((a,b) => a.score - b.score)
-    }
+  sortScore() {
+    return this.scores.sort((a, b) => a.score - b.score);
+  }
 }
 
-export default List
+export default List;
