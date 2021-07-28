@@ -1,13 +1,15 @@
+/* eslint-disable class-methods-use-this */
+
 class RefreshButton {
-  constructor(users){
-    this.users = users
+  constructor(users) {
+    this.users = users;
   }
 
-  createMarkup(){
+  createMarkup() {
     return `
     <h2>Recent score</h2>
     <button id="refresh" class="refresh"> Refresh <i class="fas fa-sync-alt"></i> </button>
-    `
+    `;
   }
 
   render(selector) {
@@ -18,10 +20,10 @@ class RefreshButton {
   }
 
   bindEvents() {
-    const refresh = document.getElementById("refresh");
-    refresh.addEventListener("click", e => {
+    const refresh = document.getElementById('refresh');
+    refresh.addEventListener('click', (e) => {
       e.preventDefault();
-      this.users.getScore()
+      this.users.getScore();
     });
   }
 }

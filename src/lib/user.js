@@ -1,5 +1,7 @@
+/* eslint-disable consistent-return */
+
 class Users {
-  constructor(url, scoreList){
+  constructor(url, scoreList) {
     this.url = url;
     this.scoreList = scoreList;
   }
@@ -7,38 +9,37 @@ class Users {
   postScore = async (name, score) => {
     const settings = {
       method: 'POST',
-        body: JSON.stringify({
-          "user": name,
-          "score": score
-        }),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
+      body: JSON.stringify({
+        user: name,
+        score,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
     };
     try {
-        const fetchResponse = await fetch(`${this.url}`, settings);
-        const data = await fetchResponse.json();
-        return data;
+      const fetchResponse = await fetch(`${this.url}`, settings);
+      const data = await fetchResponse.json();
+      return data;
     } catch (e) {
-        return e;
-    }    
+      return e;
+    }
   }
 
   getScore = async () => {
     const settings = {
       method: 'GET',
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
     };
     try {
-        const fetchResponse = await fetch(`${this.url}`, settings);
-        const data = await fetchResponse.json();
-        console.log(data.result);
-        this.scoreList.createMarkup(data.result)
+      const fetchResponse = await fetch(`${this.url}`, settings);
+      const data = await fetchResponse.json();
+      this.scoreList.createMarkup(data.result);
     } catch (e) {
-        return e;
-    }    
+      return e;
+    }
   }
 }
 

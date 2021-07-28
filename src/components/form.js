@@ -1,3 +1,5 @@
+
+/* eslint-disable class-methods-use-this, consistent-return, no-alert */
 class Form {
   constructor(scores = []) {
     this.appScore = scores;
@@ -20,22 +22,22 @@ class Form {
   }
 
   bindEvents() {
-    const form = document.getElementById("add-score");
-    form.addEventListener("submit", e => {
+    const form = document.getElementById('add-score');
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
 
       const el = e.target;
-      const [ name, score ] = [el[0].value, el[1].value];
+      const [name, score] = [el[0].value, el[1].value];
 
       if (!name || !score) {
         return alert('Please provide a valid imput!');
       }
 
 
-      this.appScore.postScore(name, score)
+      this.appScore.postScore(name, score);
 
-      el[0].value = "";
-      el[1].value = "";
+      el[0].value = '';
+      el[1].value = '';
     });
   }
 }
