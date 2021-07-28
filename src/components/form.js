@@ -7,11 +7,14 @@ class Form {
 
   createMarkup() {
     return `
+    <div class="form-wrapper">
+    <h2 class="form-title">Add your score</h2>
       <form id="add-score" class="form">
         <input type="text" placeholder="Your name">
         <input type="text" placeholder="Your score">
         <input type="submit">
-      </form>`;
+      </form>
+    </div>`;
   }
 
   render(selector) {
