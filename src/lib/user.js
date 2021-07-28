@@ -36,7 +36,8 @@ class Users {
     try {
       const fetchResponse = await fetch(`${this.url}`, settings);
       const data = await fetchResponse.json();
-      this.scoreList.createMarkup(data.result);
+      const newScore = this.scoreList.sortScore(data.result);
+      this.scoreList.createMarkup(newScore);
     } catch (e) {
       return e;
     }
