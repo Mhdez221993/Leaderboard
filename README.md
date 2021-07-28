@@ -2,7 +2,7 @@
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 
-![screenshot](https://raw.githubusercontent.com/microverseinc/curriculum-javascript/main/leaderboard/images/leaderboard_wireframe.png?token=AQE6HSPX3NJHSIM2YAMRRKLBBE7V6)
+![screenshot](leaderboard.png)
 
 ## Built With
 
