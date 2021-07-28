@@ -1,5 +1,5 @@
-
 /* eslint-disable class-methods-use-this, consistent-return, no-alert */
+
 class Form {
   constructor(scores = []) {
     this.appScore = scores;
@@ -32,7 +32,6 @@ class Form {
       if (!name || !score) {
         return alert('Please provide a valid imput!');
       }
-
 
       this.appScore.postScore(name, score);
 
