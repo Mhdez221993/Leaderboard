@@ -2,7 +2,7 @@
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 
-![screenshot](https://raw.githubusercontent.com/microverseinc/curriculum-javascript/main/leaderboard/images/leaderboard_wireframe.png?token=AQE6HSPX3NJHSIM2YAMRRKLBBE7V6)
+![screenshot](leaderboard.png)
 
 ## Built With
 
@@ -26,6 +26,12 @@ Go to `https://github.com/Mhdez221993/Leaderboard`
 5. `npm install`.
 5. `npm run build`.
 5. `npm run start`.
+
+## To create your Leaderboard game
+1. got to `index.js` file
+2. unncomment and change the constant variable `newGame` for your favorite game
+3. unncomment const variable `yourID` to generate a new Id
+4. replace `myId` for your `yourId` into `Users` class
 
 
 
