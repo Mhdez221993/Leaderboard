@@ -27,6 +27,12 @@ Go to `https://github.com/Mhdez221993/Leaderboard`
 5. `npm run build`.
 5. `npm run start`.
 
+## To create your Leaderboard game
+1. got to `index.js` file
+2. change the constant variable `newGame` for your favorite game
+3. unncomment line number #9 to generate a new Id into `yourId` variable
+4. replace `myId` for your `yourId` into `Users` class line #13
+
 
 
 ## Authors
